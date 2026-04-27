@@ -78,25 +78,189 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
-
+```
+MOV AL,27H
+MOV BL,15H
+ADD AL,BL
+MOV [3001H],AL
+HLT
+```
 
 
 ## Output  
- 
+ <img width="806" height="618" alt="image" src="https://github.com/user-attachments/assets/1d5e5358-c423-4563-af07-a541cd12400e" />
+
 ## Subtraction   of 8 bit numbers  ALP 
- 
-## Output  
-## Multiplication alp 
+ ```
+MOV AL,27H
+MOV BL,15H
+SUB AL,BL
+MOV [3001H],AL
+HLT
+```
+## Output 
+<img width="809" height="619" alt="image" src="https://github.com/user-attachments/assets/e08fda10-a296-4838-a278-06cf276ddc83" />
+
+## Multiplication of 8 bit 
+```
+MOV AL,12H
+MOV BL,04H
+MUL BL
+MOV [3001H],AL
+HLT
+```
  ## Output  
+<img width="800" height="622" alt="image" src="https://github.com/user-attachments/assets/405be02c-e291-4d63-aa8f-877fbc9a2ba2" />
 
 
-## Division alp 
-
+## Division of 8 bit 
+```
+MOV AX,0024H
+MOV BL,06H
+DIV BL
+MOV [3001H],AL
+HLT
+```
 ## Output  
+<img width="806" height="621" alt="image" src="https://github.com/user-attachments/assets/ff549c9d-9021-4a21-ae9a-df807fbd28aa" />
+
+## 16 bit
+## Addition of 16 bit ALP
+```
+MOV AX,1234H
+MOV BX,1111H
+ADD AX,BX
+MOV [3001H],AX
+HLT
+```
+## output
+<img width="803" height="623" alt="image" src="https://github.com/user-attachments/assets/cd7c860c-6edf-4736-9196-80fe1b44b5fa" />
+## Subtraction of 16 bit numbers ALP
+```
+MOV AX,1234H
+MOV BX,0011H
+SUB AX,BX
+MOV [3001H],AX
+HLT
+```
+## output
+<img width="810" height="614" alt="image" src="https://github.com/user-attachments/assets/01027f31-72ef-4055-bb78-f745ec7dc9ff" />
+## Multiplication of 16 bit numbers alp
+```
+MOV AX,0012H
+MOV BX,0004H
+MUL BX
+MOV [3001H],AX
+HLT
+```
+## output
+<img width="804" height="630" alt="image" src="https://github.com/user-attachments/assets/2a754612-4484-4e43-9fc3-82856347934b" />
+## Division of 16 bit numbers alp
+```
+MOV DX,0000H
+MOV AX,1234H
+MOV BX,0002H
+DIV BX
+MOV [3001H],AX
+HLT
+```
+## output
+<img width="804" height="605" alt="image" src="https://github.com/user-attachments/assets/93844b39-91d3-433c-b10d-a4b9420faab0" />
+## Programs for logical operations
+## 8 bit
+## AND (8 bit)
+```
+MOV AL,27H
+MOV BL,15H
+AND AL,BL
+MOV [3001H],AL
+HLT
+```
+## output
+<img width="804" height="620" alt="image" src="https://github.com/user-attachments/assets/b9d8cd71-2b97-4998-a034-e84552c440a2" />
+
+## OR (8 bit)
+```
+MOV AL,27H
+MOV BL,15H
+OR AL,BL
+MOV [3001H],AL
+HLT
+```
+## output
+<img width="806" height="613" alt="image" src="https://github.com/user-attachments/assets/f5370a5c-8397-4688-81e4-e0cf65466274" />
+
+## XOR (8 bit)
+```
+MOV AL,27H
+MOV BL,15H
+XOR AL,BL
+MOV [3001H],AL
+HLT
+```
+## output
+<img width="812" height="618" alt="image" src="https://github.com/user-attachments/assets/f84f88dc-1ebc-43a0-979b-3f252a4426f9" />
+
+## NOT (8 bit)
+```
+MOV AL,27H
+NOT AL
+MOV [3001H],AL
+HLT
+```
+## output
+<img width="811" height="607" alt="image" src="https://github.com/user-attachments/assets/5d1f2d16-070c-49f7-968b-4ba0bd7329a3" />
+
+## 16 bit
+## AND (16 bit)
+```
+MOV AX,1234H
+MOV BX,4321H
+AND AX,BX
+MOV [3001H],AX
+HLT
+```
+## output
+<img width="804" height="620" alt="image" src="https://github.com/user-attachments/assets/c7fd1ec3-516a-4f70-9172-6e3653d8c4bd" />
+
+## OR (16 bit)
+```
+MOV AX,1234H
+MOV BX,4321H
+OR AX,BX
+MOV [3001H],AX
+HLT
+```
+## output
+<img width="806" height="615" alt="image" src="https://github.com/user-attachments/assets/76431276-3dea-4fc9-85df-dbbb441c1997" />
+
+## XOR (16 bit)
+```
+MOV AX,1234H
+MOV BX,4321H
+XOR AX,BX
+MOV [3001H],AX
+HLT
+```
+## output
+<img width="835" height="605" alt="image" src="https://github.com/user-attachments/assets/6334c9af-aa2b-430c-a351-1db14b855f84" />
+
+## NOT (16 bit)
+```
+MOV AX,1234H
+NOT AX
+MOV [3001H],AX
+HLT
+
+```
+
+## output
+<img width="798" height="614" alt="image" src="https://github.com/user-attachments/assets/f9d29cd6-a633-49d0-b5df-ae8ee77c63c5" />
+
 
 
 ## Result :
- 
+ The execution of ALP on fundamental arithmetic and logical operations is successful.
 
 
 
