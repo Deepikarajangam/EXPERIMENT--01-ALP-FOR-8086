@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+## Name :DEEPIKA R
+## Roll no:212224040061 
+## Date of experiment :27.04.2026
 
 
 
